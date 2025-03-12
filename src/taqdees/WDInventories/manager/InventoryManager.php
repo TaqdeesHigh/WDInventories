@@ -16,16 +16,8 @@ class InventoryManager {
     
     /** @var InventorySerializationService */
     private InventorySerializationService $serializationService;
-    
-    /** @var LoggerUtil */
-    private LoggerUtil $logger;
-    
-    /** @var Main */
-    private Main $plugin;
 
     public function __construct(Main $plugin, LoggerUtil $logger) {
-        $this->plugin = $plugin;
-        $this->logger = $logger;
         $this->storage = new InventoryStorage(
             new Config($plugin->getDataFolder() . "inventories.yml", Config::YAML)
         );
