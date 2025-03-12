@@ -1,0 +1,6 @@
+name: WDInventories
+main: taqdees\WDInventories\Main
+version: 1.0.0
+api: 5.0.0
+description: Separates player inventories per world
+author: taqdees
